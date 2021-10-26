@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    height: auto;
+    font-family: 'Barlow', sans-serif;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 90%;
+    padding: 0 5%;
+    background-color: #3dbeff;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links{
+    color: #fff;
+    margin-left: 2rem;
+    list-style-type: none;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.nav-links:hover{
+    color:#19536b;
+}
+
+
+#Logo{
+    height: 50%;
+}
+
+.arrow-down{
+    margin-top: 5rem;
+    height: 15vh;
+    width: auto;
+    transition: 1s;
+}
+.arrow-down:hover{
+    height: 17vh;
+}
+
+.home-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: url(images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.home-quote{
+    font-family: 'Fraunces', serif;
+    padding-top: 15vh;
+    color: #fff;
+    font-size: 5rem;
+}
+
+.grid-section{
+    height: 220vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-text-container{
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid-image1{
+    background: url(images/desktop/image-transform.jpg);
+
+}
+
+.grid-image2{
+    background: url(images/desktop/image-stand-out.jpg);
+}
+.grid-image-container{
+    background-size: cover;
+    background-position: center;
+}
+
+.grid-image-text1{
+    color:#25564b;
+    background: url(images/desktop/image-graphic-design.jpg);
+}
+.grid-image-text2{
+    color:#19536b;
+    background: url(images/desktop/image-photography.jpg);
+}
+
+.grid-image-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    padding:2rem 13rem;
+    background-size: cover;
+    background-position:top;
+}
+.grid-image-text-container h3{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+
+
+
+
+.grid-text-title{
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    color:#23303e;
+}
+
+.grid-text{
+    color:#818498;
+    line-height: 1.6rem;
+}
+
+.learn-more-button{
+    margin-top: 3rem;
+    text-decoration: none;
+    color:#23303e;
+    font-size: 1.3rem;
+    font-family: 'Fraunces', serif;
+}
+
+
+
+.testimonials-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    padding:8rem;
+}
+
+.testimonials-title{
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    padding-bottom: 5rem;
+    color: #a7abae;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.testimonials-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.testimonial-image{
+    border-radius: 50%;
+    width: 6rem;
+    margin-bottom: 3rem;
+}
+
+.testimonial-text{
+    text-align: center;
+    padding-bottom: 5rem;
+    color:#818498;
+}
+.testimonial-name{
+    font-family: 'Fraunces', serif;
+    color:#23303e;
+    font-size: 1.1rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+.images-section{
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.image-milk{
+    background: url(images/desktop/image-gallery-milkbottles.jpg);
+}
+.image-orange{
+    background: url(images/desktop/image-gallery-orange.jpg);
+}
+.image-cone{
+    background: url(images/desktop/image-gallery-cone.jpg);
+}
+.image-sugar{
+    background: url(images/desktop/image-gallery-sugarcubes.jpg);
+}
+
+.image{
+    background-size: cover;
+    background-position: center;
+}
+
+
+footer{
+    color:#25564b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    background-color: #9cdacb;
+    padding-top: 2rem;
+}
+
+.footer-nav{
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-nav-links{
+    margin: 0 1rem ;
+}
+
+#Logo-footer{
+    height: 2rem;
+}
+.attribution a{
+    text-decoration: none;
+        color:#23303e;
+}
