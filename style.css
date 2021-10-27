@@ -19,7 +19,7 @@ header{
     padding: 0 5%;
     background-color: #3dbeff;
 }
-.hamburger{
+#hamburger{
     display: none;
 }
 nav ul{
@@ -82,6 +82,9 @@ nav ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.grid-image-hidden{
+    display: none;
 }
 
 .grid-image1{
@@ -295,10 +298,29 @@ footer{
 
 
 @media(max-width:700px){
-    nav{
-        display: none;
+    #Logo{
+        height: 30%;
     }
-    .hamburger{
+    nav{
+        opacity: 0;
+        transition: 1s;
+    }
+    nav ul{
+        /*display: none;*/
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        width: 80%;
+        left: 10%;
+        top:7rem;
+    }
+    .nav-links{
+        color:#000;
+        margin: 1rem 0;
+    }
+    #hamburger{
         display: block;
     }
 
@@ -311,6 +333,12 @@ footer{
         height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1.5fr 1.5fr;
+    }
+    .grid-image1{
+        display: none;
+    }
+    .grid-image-hidden{
+        display: block;
     }
     .grid-text-container{
         padding: 3rem;
