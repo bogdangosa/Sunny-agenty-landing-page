@@ -19,6 +19,9 @@ header{
     padding: 0 5%;
     background-color: #3dbeff;
 }
+.hamburger{
+    display: none;
+}
 nav ul{
     display: flex;
     flex-direction: row;
@@ -109,14 +112,14 @@ nav ul{
     justify-content: end;
     align-items: center;
     text-align: center;
-    padding:2rem 13rem;
+    padding:3rem 13rem;
     background-size: cover;
     background-position:top;
 }
 .grid-image-text-container h3{
     font-family: 'Fraunces', serif;
     font-size: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 
@@ -135,11 +138,40 @@ nav ul{
 }
 
 .learn-more-button{
+    width: fit-content;
     margin-top: 3rem;
+}
+.learn-more-text{
     text-decoration: none;
     color:#23303e;
     font-size: 1.3rem;
     font-family: 'Fraunces', serif;
+}
+.learn-more-line{
+    position: relative;
+    top:-8px;
+    height: 7px;
+    width: auto;
+    border-radius: 0.5rem;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.learn-more-line2{
+    background-color:rgb(254, 120, 103,0.5);
+}
+
+.learn-more-line1{
+    background-color:rgb(250, 212, 0,0.5);
+}
+
+
+.learn-more-button:hover .learn-more-line2{
+    background-color:rgb(254, 120, 103,1);
+}
+
+.learn-more-button:hover .learn-more-line1{
+    background-color:rgb(250, 212, 0,1);
 }
 
 
@@ -194,6 +226,11 @@ nav ul{
     padding-bottom: 1rem;
 }
 
+.testimonial-job{
+    font-size: 0.9rem;
+    color:#818498;
+}
+
 .images-section{
     height: 60vh;
     display: grid;
@@ -236,12 +273,88 @@ footer{
 
 .footer-nav-links{
     margin: 0 1rem ;
+    cursor: pointer;
+    transition: 1s;
+}
+.footer-nav-links:hover{
+    color:#fff;
 }
 
 #Logo-footer{
     height: 2rem;
 }
+
+.social-media-links{
+    margin: 0 1rem ;
+}
+
 .attribution a{
     text-decoration: none;
         color:#23303e;
+}
+
+
+@media(max-width:700px){
+    nav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+
+    .home-quote{
+        font-size: 2rem;
+    }
+
+
+    .grid-section{
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1.5fr 1.5fr;
+    }
+    .grid-text-container{
+        padding: 3rem;
+    }
+    .grid-text-title{
+        font-size: 2rem;
+
+    }
+    .grid-text{
+        font-size: 0.8rem;
+    }
+    .learn-more-text{
+        font-size: 1rem;
+    }
+
+    .grid-image-text-container{
+        padding: 3rem 4rem;
+    }
+
+    .testimonials-section{
+        height: auto;
+        padding: 4rem;
+    }
+    .testimonial{
+        padding-bottom: 2rem;
+    }
+
+    .testimonials-title{
+        font-size: 0.9rem;
+    }
+
+    .testimonials-container{
+        grid-template-columns: 1fr;
+
+    }
+    .testimonial-text{
+        padding-bottom: 2.5rem;
+    }
+
+    .images-section{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+    }
+    .attribution{
+        font-size: 0.5rem;
+    }
 }
